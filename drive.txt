@@ -1,0 +1,6 @@
+https://drive.google.com/drive/folders/1ohxnQ85RLPuEkCf5kC_rb8_WK2fvOxgr?usp=sharing
+https://drive.google.com/uc?export=view&id=1I2jsO_q-NaQF4b6VgmZdiG5nbhiTxGVC"
+https://drive.google.com/thumbnail?id=1I2jsO_q-NaQF4b6VgmZdiG5nbhiTxGVC&sz=w1000
+
+right format:
+https://drive.google.com/thumbnail?id=  &sz=w100
