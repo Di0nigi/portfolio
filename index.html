@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traduttore</title>
+    <style> 
+    @font-face {
+        font-family: "dogica";
+        src: url(Assets/dogica/TTF/dogica.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    body{
+        background-color: rgb(29, 26, 57);
+        font-family: "dogica", sans-serif;
+        margin: 0;
+        
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 10px;
+        box-sizing: border-box;
+        gap: 10px;        
+       
+    }
+    textarea.transparent-input {
+        box-shadow: -3px 3px 5px 1px rgb(37, 46, 60);
+        border-color: rgba(255, 255, 255, 0);
+        background: rgb(27, 51, 88);
+        width: 600px;
+        height: 40vh;
+        resize: none;
+        border-radius: 15px;
+        line-height: 18px;
+        
+        font-family: "dogica";
+        font-size: 10px;
+        color: rgb(235, 235, 235);
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        
+        
+        }
+    ::-webkit-input-placeholder {
+    color: rgba(235, 235, 235);
+    }
+
+
+        
+
+
+
+
+    button.InpButton{
+        box-shadow: -2px 2px 5px 0px rgb(37, 46, 60);
+        border-color: rgba(255, 255, 255, 0);
+        background: rgb(27, 51, 88);
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+        font-family: "dogica";
+        font-size: 9px;
+        color: rgb(235, 235, 235);
+        align-self: center;
+        
+        
+}
+
+
+    
+    
+    .invContainer{
+        background-color: #ffffff00;
+        height: auto;
+        width: auto;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        height: 100%; 
+        
+    }
+.TextDisplayer{
+    box-shadow: -3px 3px 5px 1px rgb(37, 46, 60);
+    border-color: rgba(255, 255, 255, 0);
+    background: rgb(27, 51, 88);
+    border-radius: 20px;
+
+    
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    color: rgb(235, 235, 235);
+    font-size: 10px;
+    line-height: 18px;
+    padding: 10px;
+
+    
+    
+   
+}
+.translated{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    width: 88ch;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <textarea class="transparent-input" id= "Field1" placeholder="What do you wanna translate?" cols="100" rows="100"></textarea>
+        <div class="invContainer">
+            <button class="InpButton" id="Button1"><center>Translate</center></button>
+        
+        </div>
+           
+
+        
+        <div class="TextDisplayer">
+            <p class ="translated" id ="Display1"></p>
+        </div>
+
+    </div>
+    
+        
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
