@@ -14,6 +14,18 @@
         font-weight: normal;
         font-style: normal;
     }
+    @font-face {
+        font-family: "bold font";
+        src: url(assets/theBoldFont.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "impact";
+        src: url(assets\IMPACT.TTF);
+        font-weight: normal;
+        font-style: normal;
+    }
     body{
         background-color: rgb(0, 0, 0);
         font-family: "vogue", sans-serif;
@@ -31,9 +43,10 @@
         position:relative;
         left: 0%;
         font-family: vogue;
-        font-size: 120px;
+        font-size: 40px;
         color: rgb(255, 255, 255);
         padding-left: 10px;
+        margin-bottom: 0px;
 
     }
     .photoContainer{
@@ -42,16 +55,66 @@
         overflow-x: auto;
         overflow-y: auto;
     }
+    .space{
+        padding: 30px;
+    }
+    .name{
+        margin-top: -10px;
+        position:relative;
+        left: 0%;
+        font-family: bold font;
+        font-size: 150px;
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        margin-bottom: 0px;
+
+    }
+    .info{
+        margin-top: -15px;
+        position:relative;
+        left: 0%;
+        font-family: impact;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        margin-bottom: 0px;
+
+    }
+    .nameBlock p{
+       /* display: inline;*/
+
+    }
+    .profile{
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        
+    }
     
     </style>
     
 </head>
 <body>
     <div class="layout">
-        <p class="title"> Film Photos</p>
+        <div class="nameBlock">
+            <p class="name">Dionigi</p>
+            <p class="name">Rodriguez</p>
+            <img class="profile" src="assets\PortraGermany-6904.png"></img>
+        </div>
+
+        <div class="space"></div>
+
+        
+        <p class="title"> Film</p>
         <div id="FilmphotoContainer", class="photoContainer"></div>
         <p class="title"> Portraits</p>
-        <div id="FilmphotoContainer", class="photoContainer"></div>
+        <div id="PortraitphotoContainer", class="photoContainer"></div>
+        <div class="space"></div>
+
         
     
 

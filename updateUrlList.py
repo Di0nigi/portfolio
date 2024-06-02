@@ -36,3 +36,21 @@ def get_image_ids_from_gdrive_url(url):
 
     # Return the list of IDs
     return image_ids
+
+def parseUrls(txt):
+    right=[]
+    targetFormat="https://drive.google.com/thumbnail?id=PP&sz=w1000"
+    with open(txt, mode="r", encoding="utf-8") as f:
+        for s in f:
+            newS=s.split("file/d/")
+            newS=newS[1].split("/view?")
+            url=f"{targetFormat.split('PP')[0]}{newS[0]}{targetFormat.split('PP')[1]}"
+            right.append(url)
+
+
+
+
+
+    return right[::-1]
+
+print(parseUrls("D:\\dionigi\\Documents\\JVSscripts\\portfolio\\photosUrls\\urlList.txt"))
