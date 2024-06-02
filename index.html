@@ -58,26 +58,43 @@
     .space{
         padding: 30px;
     }
-    .name{
+    /*.name{
         margin-top: -10px;
+        /*margin-left: 30px;
         position:relative;
         left: 0%;
         font-family: bold font;
         font-size: 150px;
         color: rgb(255, 255, 255);
         padding-left: 10px;
+        margin-bottom: 0px;}*/
+    .name{
+        margin-top: -10px;
+        /*margin-left: 30px;*/
+        position:relative;
+        left: 0%;
+        font-family: bold font;
+        font-size: 150px;
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
         margin-bottom: 0px;
+        /*letter-spacing: 46px;*/
 
     }
     .info{
-        margin-top: -15px;
-        position:relative;
-        left: 0%;
-        font-family: impact;
-        font-size: 30px;
+        
+        position: absolute;
+        top : 4%;
+        left: 53%;
+        font-family: bold font;
+        font-size: 40px;
         color: rgb(255, 255, 255);
-        padding-left: 10px;
-        margin-bottom: 0px;
+        padding-left: 35px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        letter-spacing: 4px;
 
     }
     .nameBlock p{
@@ -88,11 +105,15 @@
         position: absolute;
         top: 4%;
         right: 4%;
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         border-radius: 50%;
         object-fit: cover;
         
+    }
+    .surname p{
+       display: inline;
+
     }
     
     </style>
@@ -100,11 +121,14 @@
 </head>
 <body>
     <div class="layout">
+        <div class="space"></div>
+        
         <div class="nameBlock">
             <p class="name">Dionigi</p>
-            <p class="name">Rodriguez</p>
-            <img class="profile" src="assets\PortraGermany-6904.png"></img>
+            <p class="name">Rodriguez</p>   
+            <p class="info"></p>
         </div>
+        <img class="profile" src="assets\PortraGermany-6904.png"></img>
 
         <div class="space"></div>
 
