@@ -61,6 +61,7 @@
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: auto;
+        padding-bottom: 10px;
         
     }
     .space{
@@ -136,12 +137,32 @@
         
     }
     .line-background  {
-            width: 99%;
+            width: 95%;
             margin: 0 auto;
             border-top: 2px solid rgba(255, 255, 255, 0.482);
             
 
         }
+    .cameraInfo p {
+        display: inline;
+}
+    .camera{
+        font-family: bold font;
+        font-size: 15px;
+        color: #ffffff;
+        padding-right: 245px;
+        
+
+    }
+    .cameraTitle{
+        font-family: bold font;
+        font-size: 17px;
+        color: #ffffff;
+        padding-right: 245px;
+        
+        padding-left: 37px;
+
+    }
     
     </style>
     
@@ -149,6 +170,8 @@
 <body>
     <div class="layout">
         <div class="space"></div>
+
+        
         
         
         <div class="nameBlock">
@@ -156,15 +179,34 @@
             <p class="name">Rodriguez</p>   
             <p class="info">photography portfolio</p>
             <div class="line-background"></div>
+            <div class="space"></div>
+            <div class="cameraInfo">
+                
+                <p class="cameraTitle">My cameras:</p>
+                <p class="camera">Mamya 645</p>
+                <p class="camera">Fujifilm XH-1</p>
+                <p class="camera">Fujifilm X100</p>
+                
+
+            </div>
+            <div class="space"></div>
+            <div class="line-background"></div>
  
         </div>
 
-        
+        <p class="title">General</p>
+        <div id="GeneralphotoContainer", class="photoContainer"></div>
         <p class="title">Film</p>
         <div id="FilmphotoContainer", class="photoContainer"></div>
         <p class="title">Portraits</p>
         <div id="PortraitphotoContainer", class="photoContainer"></div>
         <div class="space"></div>
+        <div class="space"></div>
+        
+        <div class="line-background"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        
 
         
     

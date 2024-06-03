@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image</title>
+    <style>
+        body{
+        background: linear-gradient(to right, #000000, #0a004b,  #000000);
+        font-family: "vogue", sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        }
+        .container{
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="imageContainer" class="container"></div>
+
+    <script>
+        function getQueryParam(param) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function displayImage() {
+            var imageUrl = getQueryParam("image");
+            if (imageUrl) {
+                var imgContainer = document.getElementById("imageContainer");
+                var img = document.createElement("img");
+                img.height=700;
+                img.src = decodeURIComponent(imageUrl);
+                img.alt = "Displayed Image";
+                imgContainer.appendChild(img);
+            } else {
+                var imgContainer = document.getElementById("imageContainer");
+                imgContainer.innerText = "No image URL provided.";
+            }
+        }
+
+        // Call the displayImage function when the page loads
+        window.onload = displayImage;
+    </script>
+</body>
+</html>
